@@ -1,4 +1,7 @@
 
+/**
+ * questions for true or false function
+ */
 
 let score = 0;
 function question = [
@@ -8,6 +11,22 @@ function question = [
     },
     {
         question: "The Tour de France always finishes in Italy",
+        answer: false
+    },
+    {
+        question: "Galapagos tortoises sleep up to 16 hours a day",
+        answer: true
+    },
+    {
+        question: "Pepperoni is the most popular pizza topping in the US",
+        answer: true
+    },
+    {
+        question: "Every golf ball has the same number of dimples",
+        answer: false
+    },
+    {
+        question: "China has the longest coastline in the world",
         answer: false
     },
 ];
