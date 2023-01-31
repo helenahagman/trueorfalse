@@ -4,7 +4,7 @@
  */
 
 let score = 0;
-function question = [
+const question = [
     {
         question: "New York City is composed of between 36 and 42 islands",
         answer: true
@@ -29,16 +29,23 @@ function question = [
         question: "China has the longest coastline in the world",
         answer: false
     },
-];
 
-if (response === "true" && question.answer === true) {
+    var randomQuestion;
+    var response;
+      
+const checkAnswer = (response) => {
+    if (response === "true" && randomQuestion.answer === true) {
     score++;
     alert("Correct!");
     } else if {
-    (response === "false" && question.answer === false) {
+    (response === "false" && randomQuestion.answer === false) {
     score++;
     alert("Correct!");
     } else {
     alert("Incorrect.");    
     }
-    } 
+};
+
+randomQuestion = questions[Math.floor(math.random() * questions.length)];
+response = prompt(randomQuestion.question);
+checkAnswer(response);
