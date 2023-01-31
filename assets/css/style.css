@@ -13,3 +13,17 @@ h1 {
     font-weight: 300;
     font-size: 70px;
 }
+
+
+
+#true {
+    color: black;
+    background-color: green;
+    border-radius: 50px;
+}
+
+#false {
+    color: black;
+    background-color: red;
+    border-radius: 50px;
+}
