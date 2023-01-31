@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,33 +9,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>True or False game</title>
 </head>
+
 <body>
     <h1>True or False?</h1>
     <img class="logo" src="assets/images/thumbsupdown.jpg" alt="Thumbs">
-    <p>Play the game of True or False.<br>Answer the questions with a simple Yes or No.</p>
+
+    <div class="intro-area">
+        <p>Play the game of True or False.<br>It is simple, just choose <span
+                style="color: green;font-weight: bold;">Yes</span> or <span
+                style="color: red; font-weight: bold;">No</span>.</p>
+    </div>
 
     <div class="question-area">
+        <button id="true">
+            <span class="material-symbols-outlined">
+                done
+            </span>
+        </button>
+
+        <button id="false">
+            <span class="material-symbols-outlined">
+                close
+            </span>
 
     </div>
 
     <div class="score-area">
-        <button id="true">
-            <span class="material-symbols-outlined">
-                done
-                </span>
+
         </button>
-        
-        <button id="false">
-            <span class="material-symbols-outlined">
-                close
-                </span>
-        </button>
-        
+
     </div>
 
-    <script src="assets/js/script.js"></script>     
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
