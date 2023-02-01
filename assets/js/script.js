@@ -29,6 +29,22 @@ const question = [
         question: "China has the longest coastline in the world",
         answer: false
     },
+    {
+        question: "The human body is about 60% water",
+        answer: true
+    },
+    {
+        question: "An astronaut has played golf on the moon",
+        answer: true
+    },
+    {
+        question: "Humans lose more than 80% of heat from their feet",
+        answer: false
+    },
+    {
+        question: "The Chinese New Year is celebrated on the same day every year",
+        answer: false
+    },
 
 
     let currentQuestion = 0;
@@ -51,7 +67,7 @@ const checkAnswer = response => {
     score++;
     alert("Correct!");
     } else if {
-    (response === "false" && question[currentQuestion].answer === false) {
+    (response === "false" && questions[currentQuestion].answer === false) {
     score++;
     alert("Correct!");
     } else {
