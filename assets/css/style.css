@@ -1,5 +1,6 @@
 /* Global style */
 
+
 body {
     background-color: white;
     text-align: center;
@@ -32,6 +33,7 @@ h1 {
 .intro-area, .question-area, .score-area {
     padding: 2% 2% 2% 2%;
     margin: auto;
+    text-align: center;
 }
 
 #score {
@@ -63,6 +65,16 @@ h1 {
     border-radius: 50px;
 }
 
+#true :hover {
+    background-color: darkgreen;
+    border-radius: 50px;
+}
+
+#false :hover {
+    background-color: darkred;
+    border-radius: 50px;
+}
+
 /* Media queries*/
 
 @media screen and (max-width: 480px) {
@@ -72,10 +84,27 @@ h1 {
 
     h1 {
         font-size: 50px;
+        padding-left: 5%;
     }
 
     #true, #false {
         font-size: 20px;
     }
+        
+}
+
+@media screen and (max-width: 390px) {
+    body {
+        font-size: 20px;
+        text-align: center;
+    }
     
+    #true, #false {
+        font-size: 20px;
+    }
+    
+    .intro-area, .question-area, .score-area {
+        padding-left: 10%;
+    }
+
 }
