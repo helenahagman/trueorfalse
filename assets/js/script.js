@@ -49,3 +49,13 @@ const checkAnswer = (response) => {
 randomQuestion = questions[Math.floor(math.random() * questions.length)];
 response = prompt(randomQuestion.question);
 checkAnswer(response);
+
+function true_clicked() {
+    var true = document.getElementById("true").value;
+    checkAnswer(true);
+}
+
+function false_clicked() {
+    var false = document.getElementById("false").value;
+    checkAnswer(false);
+}
