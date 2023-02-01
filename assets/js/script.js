@@ -57,18 +57,21 @@ const checkAnswer = response => {
     } else {
     alert("Incorrect.");    
     }
+}
+
+currentQuestion++;
+if (currentQuestion < questions.length){
+displayQuestion();
+} else {
+    alert ("Game Over! Your final score is" + score);
+}
+updateScore();
 };
 
-randomQuestion = questions[Math.floor(math.random() * questions.length)];
-response = prompt(randomQuestion.question);
-checkAnswer(response); */
+document.getElementById("true").addEventListener("click", function(){
+    checkAnswer("true");
+});
 
-function true_clicked() {
-    var true = document.getElementById("true").value;
-    checkAnswer(true);
-}
-
-function false_clicked() {
-    var false = document.getElementById("false").value;
-    checkAnswer(false);
-}
+document.getElementById("false").addEventListener("click", function(){
+    checkAnswer("false");
+});
