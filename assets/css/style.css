@@ -1,11 +1,15 @@
+/* Global style */
+
 body {
     background-color: white;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 25px;
+    display: block;
+    margin: auto;
 }
 
-/* heading */
+/* Heading */
 
 .heading {
     text-align: center;
@@ -17,11 +21,32 @@ h1 {
     font-size: 70px;
 }
 
+.img {
+    padding: 5px 5px 5px 5px;
+    height: 200px;
 
-/* question area */
+}
 
-.question-area {
-    padding-bottom: 5%;
+/* Game layout */
+
+.intro-area, .question-area, .score-area {
+    padding: 2% 2% 2% 2%;
+    margin: auto;
+}
+
+#score {
+    display: inline-block;
+    padding: 20px;
+}
+
+#correct {
+    color: rgb(12, 211, 12);
+    font-weight: bold;
+}
+
+#incorrect {
+    color: red;
+    font-weight: bold;
 }
 
 /* buttons */
