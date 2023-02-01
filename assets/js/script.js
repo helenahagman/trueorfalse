@@ -30,15 +30,28 @@ const question = [
         answer: false
     },
 
-    var randomQuestion;
-    var response;
-      
-const checkAnswer = (response) => {
-    if (response === "true" && randomQuestion.answer === true) {
+
+    let currentQuestion = 0;
+
+    const displayQuestion = () => {
+        document.getElementById("question").innerHTML = questions[currentQuestion].question;
+    };
+
+    displayQuestion ();
+
+    const updateScore = () => {
+        document.getElementById("score").innerHTML = `Score: $(score`;
+    };
+
+    updateScore();
+
+     
+const checkAnswer = response => {
+    if (response === "true" && questions[currentQuestion].answer === true) {
     score++;
     alert("Correct!");
     } else if {
-    (response === "false" && randomQuestion.answer === false) {
+    (response === "false" && question[currentQuestion].answer === false) {
     score++;
     alert("Correct!");
     } else {
@@ -48,7 +61,7 @@ const checkAnswer = (response) => {
 
 randomQuestion = questions[Math.floor(math.random() * questions.length)];
 response = prompt(randomQuestion.question);
-checkAnswer(response);
+checkAnswer(response); */
 
 function true_clicked() {
     var true = document.getElementById("true").value;
