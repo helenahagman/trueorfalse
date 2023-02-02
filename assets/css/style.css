@@ -1,5 +1,10 @@
 /* Global style */
-
+*{
+    box-sizing: border-box;
+    padding: 10px;
+    margin: auto;
+    border: none;
+  }
 
 body {
     background-color: white;
@@ -77,7 +82,36 @@ h1 {
 
 /* Media queries*/
 
-@media screen and (max-width: 480px) {
+
+/* Default styles for all screen sizes */
+* {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: auto;
+    border: none;
+  }
+
+
+/* Styles for screens with a maximum width of 1200px */
+   @media only screen and (max-width: 1200px) {
+   /* For mobile phones: */
+    body {
+        margin-top: 30px;
+    }
+
+   }
+
+  /* Styles for screens with a maximum width of 768px */
+  @media only screen and (max-width: 768px) {
+    /* For tablets: */
+    body {
+        margin-top: 20px;
+    }
+  }
+
+  /* Styles for screens with a maximum width of 480px */
+  @media only screen and (max-width: 480px) {
+    /* For small screens: */
     body {
         font-size: 20px;
     }
@@ -90,13 +124,18 @@ h1 {
     #true, #false {
         font-size: 20px;
     }
+
+    
         
 }
 
-@media screen and (max-width: 390px) {
+ /* Styles for screens with a maximum width of 480px */
+ @media only screen and (max-width: 320px) {
+    /* For x-small screens: */
     body {
         font-size: 20px;
         text-align: center;
+        margin-top: 10px;
     }
     
     #true, #false {
