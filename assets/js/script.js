@@ -1,10 +1,11 @@
 
+
 /**
  * questions for true or false function
  */
 
-let score = 0;
-const question = [
+let currentQuestion = 0;
+const questions = [
     {
         question: "New York City is composed of between 36 and 42 islands",
         answer: true
@@ -44,42 +45,35 @@ const question = [
     {
         question: "The Chinese New Year is celebrated on the same day every year",
         answer: false
-    },
-
-
-    let currentQuestion = 0;
+    }
+];
 
     const displayQuestion = () => {
         document.getElementById("question").innerHTML = questions[currentQuestion].question;
     };
 
-    displayQuestion ();
-
+   
     const updateScore = () => {
-        document.getElementById("score").innerHTML = `Score: $(score`;
+        document.getElementById("score").innerHTML = score;
     };
 
-    updateScore();
-
-     
+         
 const checkAnswer = response => {
     if (response === "true" && questions[currentQuestion].answer === true) {
     score++;
     alert("Correct!");
-    } else if {
-    (response === "false" && questions[currentQuestion].answer === false) {
+    } else if (response === "false" && questions[currentQuestion].answer === false) {
     score++;
     alert("Correct!");
     } else {
     alert("Incorrect.");    
     }
-}
 
 currentQuestion++;
-if (currentQuestion < questions.length){
+if (currentQuestion < questions.length) {
 displayQuestion();
 } else {
-    alert ("Game Over! Your final score is" + score);
+    alert("Game Over! Your final score is" + score);
 }
 updateScore();
 };
@@ -91,3 +85,6 @@ document.getElementById("true").addEventListener("click", function(){
 document.getElementById("false").addEventListener("click", function(){
     checkAnswer("false");
 });
+
+displayQuestion();
+updateScore();
