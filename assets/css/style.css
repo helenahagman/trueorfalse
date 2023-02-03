@@ -80,15 +80,10 @@ h1 {
     border-radius: 50px;
 }
 
-#true :hover {
-    background-color: darkgreen;
-    border-radius: 50px;
+#true :hover, #false :hover {
+    color: white;
 }
 
-#false :hover {
-    background-color: darkred;
-    border-radius: 50px;
-}
 
 /* Media queries*/
 
