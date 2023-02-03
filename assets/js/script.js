@@ -74,9 +74,8 @@ const checkAnswer = response => {
 currentQuestion++;
 if (currentQuestion < questions.length) {
 displayQuestion();
-} else {
-    alert("Game Over! Your final score is" + score);
-}
+} 
+
 updateScore();
 };
 
