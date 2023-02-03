@@ -33,6 +33,16 @@ h1 {
 
 }
 
+.true {
+    color:rgb(12, 211, 12);
+    font-weight: bold;
+}
+
+.false {
+    color:red;
+    font-weight: bold;
+}
+
 /* Game layout */
 
 .intro-area, .question-area, .score-area {
