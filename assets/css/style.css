@@ -51,6 +51,10 @@ h1 {
     text-align: center;
 }
 
+#question {
+    font-weight: bold;
+}
+
 #score {
     display: inline-block;
     padding: 20px;

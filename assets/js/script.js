@@ -1,7 +1,7 @@
 
 
 /**
- * questions for true or false function
+ * questions for true or false game
  */
 
 let currentQuestion = 0;
@@ -52,12 +52,10 @@ const questions = [
         document.getElementById("question").innerHTML = questions[currentQuestion].question;
     };
 
-   
-    const updateScore = () => {
-        document.getElementById("score").innerHTML = score;
-    };
-
-         
+/**
+ * checks if the answer is correct or incorrect 
+ */
+            
 const checkAnswer = response => {
     if (response === "true" && questions[currentQuestion].answer === true) {
     score++;
@@ -68,6 +66,10 @@ const checkAnswer = response => {
     } else {
     alert("Incorrect.");    
     }
+
+    const updateScore = () => {
+        document.getElementById("score").innerHTML = score;
+    };
 
 currentQuestion++;
 if (currentQuestion < questions.length) {
