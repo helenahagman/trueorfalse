@@ -56,28 +56,28 @@ const questions = [
  * checks if the answer is correct or incorrect 
  */
             
-const checkAnswer = response => {
+function checkAnswer(response) {
     if (response === "true" && questions[currentQuestion].answer === true) {
-    score++;
-    alert("Correct!");
+        score++;
+        alert("Correct!");
     } else if (response === "false" && questions[currentQuestion].answer === false) {
-    score++;
-    alert("Correct!");
+        score++;
+        alert("Correct!");
     } else {
-    alert("Incorrect.");    
+        alert("Incorrect.");
     }
 
     const updateScore = () => {
         document.getElementById("score").innerHTML = score;
     };
 
-currentQuestion++;
-if (currentQuestion < questions.length) {
-displayQuestion();
-} 
+    currentQuestion++;
+    if (currentQuestion < questions.length) {
+        displayQuestion();
+    }
 
-updateScore();
-};
+    updateScore();
+}
 
 document.getElementById("true").addEventListener("click", function(){
     checkAnswer("true");
