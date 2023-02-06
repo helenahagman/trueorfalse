@@ -4,6 +4,7 @@
  * questions for true or false game
  */
 
+
 let currentQuestion = 0;
 let score = 0;
 const questions = [
@@ -54,18 +55,21 @@ const questions = [
     };
 
 /**
- * checks if the answer is correct or incorrect 
+ * checks if the answer is correct or incorrect and increments the score accordingly
  */
             
 function checkAnswer(response) {
     if (response === "true" && questions[currentQuestion].answer === true) {
         score++;
         alert("Correct!");
+        incrementScore();
     } else if (response === "false" && questions[currentQuestion].answer === false) {
         score++;
         alert("Correct!");
+        incrementScore();
     } else {
         alert("Incorrect.");
+        incrementIncorrectAnswer();
     }
 
     currentQuestion++;
@@ -98,3 +102,21 @@ function false_clicked() {
 
 displayQuestion();
 updateScore();
+
+
+/**
+ * get the current correct answers score and increments it by 1
+ */
+function incrementScore() {
+    let oldScore = parseInt(document.getElementById("score").innerText)
+    document.getElementById("score").innerText = ++oldScore;
+}
+
+
+/**
+ * get the current incorrect answers score and increments it by 1
+ */
+function incrementIncorrectAnswer() {
+    let oldScore = parseInt(document.getElementById("incorrect").innerText)
+    document.getElementById("incorrect").innerText = ++oldScore;
+}
