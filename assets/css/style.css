@@ -43,6 +43,16 @@ h1 {
     font-weight: bold;
 }
 
+.fa-solid fa-check {
+    color:rgb(12, 211, 12);
+    font-weight: bold;
+}
+
+.fa-solid fa-xmark {
+    color:red;
+    font-weight: bold;
+}
+
 /* Game layout */
 
 .intro-area, .question-area, .score-area {
