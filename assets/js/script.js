@@ -5,6 +5,7 @@
  */
 
 let currentQuestion = 0;
+let score = 0;
 const questions = [
     {
         question: "New York City is composed of between 36 and 42 islands",
@@ -67,10 +68,6 @@ function checkAnswer(response) {
         alert("Incorrect.");
     }
 
-    const updateScore = () => {
-        document.getElementById("score").innerHTML = score;
-    };
-
     currentQuestion++;
     if (currentQuestion < questions.length) {
         displayQuestion();
@@ -79,13 +76,25 @@ function checkAnswer(response) {
     updateScore();
 }
 
-document.getElementById("true").addEventListener("click", function(){
+const updateScore = () => {
+    document.getElementById("score").innerHTML = score;
+};
+
+function true_clicked() {
+    checkAnswer("true");
+
+    document.getElementById("true").addEventListener("click", function(){
     checkAnswer("true");
 });
+}
 
-document.getElementById("false").addEventListener("click", function(){
+function false_clicked() {
+    checkAnswer("false");
+
+    document.getElementById("false").addEventListener("click", function(){
     checkAnswer("false");
 });
+}
 
 displayQuestion();
 updateScore();
