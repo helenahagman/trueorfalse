@@ -108,8 +108,7 @@ updateScore();
  * get the current correct answers score and increments it by 1
  */
 function incrementScore() {
-    let oldScore = parseInt(document.getElementById("score").innerText)
-    document.getElementById("score").innerText = ++oldScore;
+    document.getElementById("correct").innerHTML = parseInt(document.getElementById("correct").innerHTML) + 1;
 }
 
 
@@ -117,6 +116,5 @@ function incrementScore() {
  * get the current incorrect answers score and increments it by 1
  */
 function incrementIncorrectAnswer() {
-    let oldScore = parseInt(document.getElementById("incorrect").innerText)
-    document.getElementById("incorrect").innerText = ++oldScore;
+    document.getElementById("incorrect").innerHTML = parseInt(document.getElementById("incorrect").innerHTML) + 1;
 }
