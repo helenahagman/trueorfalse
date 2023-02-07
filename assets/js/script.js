@@ -45,6 +45,50 @@ const questions = [{
         question: "The Chinese New Year is celebrated on the same day every year",
         answer: false
     }
+    {
+        question: "The largest living frog is the Goliath frog of West Africa.",
+        answer: true
+    }
+    {
+        question: "The letter “T” is the most common in the English Language.",
+        answer: false
+    }
+    {
+        question: "Toy Story was the first movie Pixar made.",
+        answer: true
+    }
+    {
+        question: "An astronaut has played golf on the moon.",
+        answer: true
+    }
+    {
+        question: "There are 30 NFL teams.",
+        answer: false
+    }
+    {
+        question: "The New York Marathon is the largest in the world.",
+        answer: true
+    }
+    {
+        question: "The Chinese New Year is celebrated on the same day every year.",
+        answer: false
+    }
+    {
+        question: "Caesar Salad originates from Italy.",
+        answer: false
+    }
+    {
+        question: "Infants have more bones than adults.",
+        answer: true
+    }
+    {
+        question: "Bats are blind.",
+        answer: false
+    }
+    {
+        question: "The song “We Don't Talk About Bruno” from Encanto is the first Disney song to hit #1 on the Billboard Hot 100 chart in 29 years.",
+        answer: true
+    }
 ];
 
 /**

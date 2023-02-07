@@ -51,11 +51,14 @@ When the true or false buttons are clicked the user will get instant feedback wi
   <li>CSS validation complete with no errors</li>
   <br>
   <p>
-    <a 
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
     </a>
   </p>
   <br>
-  <li>HTML validation complete with no errors</li>
+  <li>HTML validation complete with no errors or warning, using https://validator.w3.org/nu/#textarea</li>
   </ul>
   <br>
 
