@@ -148,18 +148,25 @@ h1 {
     #true, #false {
         font-size: 20px;
     }
-
     
-        
+    .img {
+        padding: 5px 5px 5px 5px;
+        height: 160px;
+    }
 }
 
- /* Styles for screens with a maximum width of 480px */
+ /* Styles for screens with a maximum width of 320px */
  @media only screen and (max-width: 320px) {
     /* For x-small screens: */
     body {
         font-size: 20px;
         text-align: center;
         margin-top: 10px;
+    }
+    
+    h1 {
+        font-size: 45px;
+        padding-left: 5%;
     }
     
     #true, #false {
@@ -169,5 +176,9 @@ h1 {
     .intro-area, .question-area, .score-area {
         padding-left: 10%;
     }
-
+    
+    .img {
+        padding: 5px 5px 5px 5px;
+        height: 140px;
+    }
 }
