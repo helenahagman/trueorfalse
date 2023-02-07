@@ -8,9 +8,11 @@
 The plan was to include features like: 
 <ul>
   <li>Feedback on answered questions.</li>
+  <li>Display random questions from the question bank.</li>
   <li>Score tracking system.</li>
   <li>Total score after 5 questions.</li>
   <li>Images to support the instant feedback for both correct and incorrect answers.</li>
+  <li>Restart and reset button for the user.</li>
 </ul> 
 </p>
 <br>
@@ -57,7 +59,7 @@ When the true or false buttons are clicked the user will get instant feedback wi
   <ul>
   <li>Questions did not show on the page - fixed<br> The code was missing the the div id="question". After updating the code the questions show</li>
   <li>True button didnt work - fixed<br> The code was missing some characters. After updating the code the True button works as expected.</li>
-  <li>The score is not updated - <br> </li></ul>
+  <li>The score is not updated - fixed<br> Added and updated the incrementScore function after watching the walk through project again. The update is now working as expected.</li></ul>
 <br>
 <h2>Badges</h2>
   <br>
@@ -72,7 +74,12 @@ When the true or false buttons are clicked the user will get instant feedback wi
     </a>
   </p>
   <br>
-  <li>HTML validation complete with no errors or warning, using https://validator.w3.org/nu/#textarea</li>
+  <li>HTML validation complete with no errors or warning, using https://validator.w3.org/</li>
+  <br>
+  <p>JSHint validation completed, using https://jshint.com/
+  <ul>Warnings: <li>Undefined variable Swal - Variable is defined in the importet library from Sweet Alert.</li>
+  </ul>
+  </p>
   </ul>
   <br>
 
