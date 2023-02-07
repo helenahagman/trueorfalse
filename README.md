@@ -95,11 +95,22 @@ When the true or false buttons are clicked the user will get instant feedback wi
   <p>Useful links for validation and help:</p>
   <ul>
    <li>https://www.w3schools.com/</li>
+   <ul>Searched for assistance and tips</ul>
+   <li>https://teamtreehouse.com/community/how-do-i-use-mathrandom-on-an-array-of-questions</li>
+   <ul>Searched for help with the display of random questions</ul>
    <li>https://fonts.google.com/</li>
+   <ul>Fonts and icons for the game.</ul>
    <li>https://validator.w3.org/</li>
+   <ul>Validation of the HTML code.</ul>
    <li>https://jigsaw.w3.org/css-validator/</li>
+   <ul>Validation of the CSS code.</ul>
+   <li>https://jshint.com/</li>
+   <ul>Validation of the Java Script code.</ul>
    <li>https://www.webpagetest.org/</li>
+   <ul></ul>
    <li>https://ui.dev/amiresponsive</li>
+   <ul></ul>
+   
 
   </ul>
   <br>
