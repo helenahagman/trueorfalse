@@ -18,15 +18,20 @@
 </head>
 
 <body>
-    <h1><span class="true">True</span> or <span class="false">False?</span></h1>
-    <img class="img" src="assets/images/thumbsupdown.jpg" alt="Thumbs">
+    <!--Header section-->
+    <header>
+        <h1><span class="true">True</span> or <span class="false">False?</span></h1>
+        <img class="img" src="assets/images/thumbsupdown.jpg" alt="Thumbs">
+    </header>
 
-    <div class="intro-area">
+    <!--Introduction section-->
+    <section class="intro-area">
         <p>Play the game!<br>It is simple, just choose <span class="true">TRUE</span> or <span
                 class="false">FALSE</span>.</p>
-    </div>
+    </section>
 
-    <div class="question-area">
+    <!--Question section including game buttons-->
+    <section class="question-area">
         <div id="question">
             <h2>Question:</h2>
         </div>
@@ -44,18 +49,17 @@
                 </span>
             </button>
         </span>
-    </div>
+    </section>
 
-    <div class="score-area">
-
+    <!--Score section with score count-->
+    <section class="score-area">
         <div>
             <p class="score">Won: <span id="correct">0</span></p>
             <p class="score">Lost: <span id="incorrect">0</span></p>
             <i class="fa-solid fa-check"></i>
             <i class="fa-solid fa-xmark"></i>
         </div>
-
-    </div>
+    </section>
 
     <!-- js and sweet alert script-->
     <script src="assets/js/script.js"></script>
