@@ -3,7 +3,9 @@
 
 <h2>Description</h2>
 <br>
-<p>This page is a single page with a True or False game. The user will be presented with questions that will be answered  with True or False. When the user clicks the green True or red False button they will get instant feedback with an emoji showing if the answer is correct or incorrect. Underneath the buttons on the page the score will show how many correct and incorrect answers the user has.  
+<p>This page is a single page with a True or False game. The user will be presented with questions that can be answered with True or False. When the user hovers over the true button the black check symbol will turn white, the same rules apply for the red false button.<br> 
+<img class="img" src="assets/images/hover.png" alt="Hover"><br>
+When the true or false buttons are clicked the user will get instant feedback with an emoji showing if the answer is correct or incorrect. Underneath the buttons on the page the score will show how many correct and incorrect answers the user has.  
 </p>
 <br>
 <p>  RESPONSIVE LINK
@@ -13,9 +15,9 @@
 <br>
 <h3>Game page</h3>
 <ul>
-  <li>This is s one page game</li>
+  <li>This is a one page game</li>
   <li>Clickable True and False buttons to answer the game questions.</li> 
-  <li>Hoover function on the True and False buttons. </li>
+  <li>Hoover function on the True and False buttons.</li>
   <li>Clear and consistant visual design through out the page, with green representing true and red representing false</li>
   <li></li>
   <br>  
