@@ -5,7 +5,7 @@
 
 let currentQuestion = 0;
 let score = 0;
-const questions = [{
+var questions = [{
         question: "New York City is composed of between 36 and 42 islands",
         answer: true
     },
@@ -92,8 +92,18 @@ const questions = [{
 ];
 
 /**
- * Dispalys the questions for the game
+ * Displays five random questions for the game
  */
+
+let randomQuestions = [];
+for (let i = 0; i < 5; i++){
+    let randomIndex = Math.floor(Math.random() * questions.length);
+    randomQuestions.push(questions[randomIndex]);
+    questions.splice(randomIndex, 1);
+}
+
+questions = randomQuestions;
+
 const displayQuestion = () => {
     document.getElementById("question").innerHTML = questions[currentQuestion].question;
 };
