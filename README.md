@@ -3,7 +3,19 @@
 
 <h2>Description</h2>
 <br>
-<p>This page is a single page with a True or False game. The user will be presented with questions that can be answered with True or False. When the user hovers over the true button the black check symbol will turn white, the same rules apply for the red false button.<br> 
+<p>This is a single page, True or False game. The user will be presented with questions that can be answered with either True or False. The goal for the user is to be able to play a simple but entertaining online game. The site owner's goal is to provide a quick and fun game that can by played by anyone. 
+<br>
+The plan was to include features like: 
+<ul>
+  <li>Feedback on answered questions.</li>
+  <li>Score tracking system.</li>
+  <li>Total score after 5 questions.</li>
+  <li>Images to support the instant feedback for both correct and incorrect answers.</li>
+</ul> 
+</p>
+<br>
+<p>
+When the user hovers over the true button the black check symbol will turn white, the same rules apply for the red false button.<br> 
 <img class="img" src="assets/images/hover.png" alt="Hover"><br>
 When the true or false buttons are clicked the user will get instant feedback with an emoji showing if the answer is correct or incorrect. Underneath the buttons on the page the score will show how many correct and incorrect answers the user has.  
 </p>
@@ -15,11 +27,13 @@ When the true or false buttons are clicked the user will get instant feedback wi
 <br>
 <h3>Game page</h3>
 <ul>
-  <li>This is a one page game</li>
-  <li>Clickable True and False buttons to answer the game questions.</li> 
+  <li>Single page game</li>
+  <li>Clickable True and False buttons to answer the game questions.</li>
+  <li>Instant feedback for correct and incorrect answers.</li> 
   <li>Hoover function on the True and False buttons.</li>
   <li>Clear and consistant visual design through out the page, with green representing true and red representing false</li>
-  <li></li>
+  <li>Accessible and easy to navigate with no distractions</li>
+  <li>
   <br>  
 
  
