@@ -1,5 +1,3 @@
-
-
 /**
  * questions for true or false game
  */
@@ -7,8 +5,7 @@
 
 let currentQuestion = 0;
 let score = 0;
-const questions = [
-    {
+const questions = [{
         question: "New York City is composed of between 36 and 42 islands",
         answer: true
     },
@@ -53,25 +50,43 @@ const questions = [
 /**
  * Dispalys the questions for the game
  */
-    const displayQuestion = () => {
-        document.getElementById("question").innerHTML = questions[currentQuestion].question;
-    };
+const displayQuestion = () => {
+    document.getElementById("question").innerHTML = questions[currentQuestion].question;
+};
 
 /**
  * checks if the answer is correct or incorrect and increments the score accordingly
  */
-            
+
 function checkAnswer(response) {
     if (response === "true" && questions[currentQuestion].answer === true) {
         score++;
-        Swal.fire({ title: "Correct!", text: "Well done!", icon: "success", timer: 1500, showConfirmButton: false });
+        Swal.fire({
+            title: "Correct!",
+            text: "Well done!",
+            icon: "success",
+            timer: 1500,
+            showConfirmButton: false
+        });
         incrementScore();
     } else if (response === "false" && questions[currentQuestion].answer === false) {
         score++;
-        Swal.fire({ title: "Correct!", text: "Well done!", icon: "success", timer: 1500, showConfirmButton: false });
+        Swal.fire({
+            title: "Correct!",
+            text: "Well done!",
+            icon: "success",
+            timer: 1500,
+            showConfirmButton: false
+        });
         incrementScore();
     } else {
-        Swal.fire({ title: "Incorrect", text: "Ooops..not the right answer.", icon: "error", timer: 1500, showConfirmButton: false });
+        Swal.fire({
+            title: "Incorrect",
+            text: "Ooops..not the right answer.",
+            icon: "error",
+            timer: 1500,
+            showConfirmButton: false
+        });
         incrementIncorrectAnswer();
     }
 
@@ -94,17 +109,17 @@ const updateScore = () => {
 function true_clicked() {
     checkAnswer("true");
 
-    document.getElementById("true").addEventListener("click", function(){
-    checkAnswer("true");
-});
+    document.getElementById("true").addEventListener("click", function () {
+        checkAnswer("true");
+    });
 }
 
 function false_clicked() {
     checkAnswer("false");
 
-    document.getElementById("false").addEventListener("click", function(){
-    checkAnswer("false");
-});
+    document.getElementById("false").addEventListener("click", function () {
+        checkAnswer("false");
+    });
 }
 
 displayQuestion();
