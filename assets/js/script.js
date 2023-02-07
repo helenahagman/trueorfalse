@@ -50,6 +50,9 @@ const questions = [
     }
 ];
 
+/**
+ * Dispalys the questions for the game
+ */
     const displayQuestion = () => {
         document.getElementById("question").innerHTML = questions[currentQuestion].question;
     };
@@ -61,14 +64,14 @@ const questions = [
 function checkAnswer(response) {
     if (response === "true" && questions[currentQuestion].answer === true) {
         score++;
-        alert("Correct!");
+        Swal.fire({ title: "Correct!", text: "Well done!", icon: "success", timer: 1500, showConfirmButton: false });
         incrementScore();
     } else if (response === "false" && questions[currentQuestion].answer === false) {
         score++;
-        alert("Correct!");
+        Swal.fire({ title: "Correct!", text: "Well done!", icon: "success", timer: 1500, showConfirmButton: false });
         incrementScore();
     } else {
-        alert("Incorrect.");
+        Swal.fire({ title: "Incorrect", text: "Ooops..not the right answer.", icon: "error", timer: 1500, showConfirmButton: false });
         incrementIncorrectAnswer();
     }
 
@@ -79,6 +82,10 @@ function checkAnswer(response) {
 
     updateScore();
 }
+
+/**
+ * updates the score after the questions have been answered
+ */
 
 const updateScore = () => {
     document.getElementById("score").innerHTML = score;
@@ -105,15 +112,16 @@ updateScore();
 
 
 /**
- * get the current correct answers score and increments it by 1
+ * gets the current correct answers score and increments it by 1
  */
+
 function incrementScore() {
     document.getElementById("correct").innerHTML = parseInt(document.getElementById("correct").innerHTML) + 1;
 }
 
 
 /**
- * get the current incorrect answers score and increments it by 1
+ * gets the current incorrect answers score and increments it by 1
  */
 function incrementIncorrectAnswer() {
     document.getElementById("incorrect").innerHTML = parseInt(document.getElementById("incorrect").innerHTML) + 1;
