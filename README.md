@@ -9,10 +9,9 @@ The plan was to include features like:
 <ul>
   <li>Feedback on answered questions.</li>
   <li>Display random questions from the question bank.</li>
-  <li>Score tracking system.</li>
-  <li>Total score after 5 questions.</li>
+  <li>Score tracking system that updated the score after each question.</li>
   <li>Images to support the instant feedback for both correct and incorrect answers.</li>
-  <li>Restart and reset button for the user.</li>
+  <li>Play again button displayed for the user after the 5 questions have been answered.</li>
 </ul> 
 </p>
 <br>
