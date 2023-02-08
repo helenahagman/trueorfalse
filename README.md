@@ -21,7 +21,7 @@ When the user hovers over the true button the black check symbol will turn white
 When the true or false buttons are clicked the user will get instant feedback with an emoji showing if the answer is correct or incorrect. Underneath the buttons on the page the score will show how many correct and incorrect answers the user has.  
 </p>
 <br>
-<p>  RESPONSIVE LINK
+<p><a href="https://ui.dev/amiresponsive?url=https://helenahagman.github.io/trueorfalse/">Responsive Link</a>
 </p>
 <br>
 <h2>Features</h2>
