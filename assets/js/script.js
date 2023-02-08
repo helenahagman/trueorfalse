@@ -170,7 +170,7 @@ function checkAnswer(response) {
                 }
                 
                 questions = randomQuestions;
-                
+                displayQuestion();
             }
         });
         
