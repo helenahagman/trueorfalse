@@ -115,6 +115,7 @@ const displayQuestion = () => {
 function checkAnswer(response) {
     if (response === "true" && questions[currentQuestion].answer === true) {
         score++;
+       /**code from sweet alert examples */
         Swal.fire({
             title: "Correct!",
             text: "Well done!",
@@ -125,6 +126,7 @@ function checkAnswer(response) {
         incrementScore();
     } else if (response === "false" && questions[currentQuestion].answer === false) {
         score++;
+        /**code from sweet alert examples */
         Swal.fire({
             title: "Correct!",
             text: "Well done!",
@@ -134,6 +136,7 @@ function checkAnswer(response) {
         });
         incrementScore();
     } else {
+       /**code from sweet alert examples */
         Swal.fire({
             title: "Incorrect",
             text: "Ooops..not the right answer.",
@@ -144,11 +147,36 @@ function checkAnswer(response) {
         incrementIncorrectAnswer();
     }
 
+/**
+ * Adds a pop up with the total score and askes if the user wants to play again 
+ * */
     currentQuestion++;
-    if (currentQuestion < questions.length) {
-        displayQuestion();
+    if (currentQuestion === questions.length) {
+        /**code from sweet alert examples */
+        Swal.fire({
+            title: "How did you do?",
+            text: "You got " + score + " out of " + questions.length,
+            icon: "info",
+            confirmButtonText: "Play again?"
+        }).then((result) => {
+            if (result.value) {
+                currentQuestion = 0;
+                score = 0;
+                randomQuestions = [];
+                for (let i = 0; i < 5; i++){
+                    let randomIndex = Math.floor(Math.random() * questions.length);
+                    randomQuestions.push(questions[randomIndex]);
+                    questions.splice(randomIndex, 1);
+                }
+                
+                questions = randomQuestions;
+                
+            }
+        });
+        
     }
 
+    displayQuestion();
     updateScore();
 }
 
