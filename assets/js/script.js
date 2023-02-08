@@ -163,7 +163,7 @@ function checkAnswer(response) {
                 currentQuestion = 0;
                 score = 0;
                 randomQuestions = [];
-                for (let i = 0; i < 5; i++){
+                for (let i = 0; i < 5; i++) {
                     let randomIndex = Math.floor(Math.random() * questions.length);
                     randomQuestions.push(questions[randomIndex]);
                     questions.splice(randomIndex, 1);
