@@ -160,21 +160,15 @@ const updateScore = () => {
     document.getElementById("score").innerHTML = score;
 };
 
-function true_clicked() {
-    checkAnswer("true");
-
-    document.getElementById("true").addEventListener("click", function () {
+document.getElementById("true").addEventListener("click", function () {
         checkAnswer("true");
-    });
-}
+});
 
-function false_clicked() {
-    checkAnswer("false");
 
-    document.getElementById("false").addEventListener("click", function () {
+document.getElementById("false").addEventListener("click", function () {
         checkAnswer("false");
-    });
-}
+});
+
 
 displayQuestion();
 updateScore();
@@ -195,3 +189,4 @@ function incrementScore() {
 function incrementIncorrectAnswer() {
     document.getElementById("incorrect").innerHTML = parseInt(document.getElementById("incorrect").innerHTML) + 1;
 }
+

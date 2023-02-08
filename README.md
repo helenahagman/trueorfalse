@@ -3,7 +3,7 @@
 
 <h2>Description</h2>
 <br>
-<p>This is a single page, True or False game. The user will be presented with questions that can be answered with either True or False. The goal for the user is to be able to play a simple but entertaining online game. The site owner's goal is to provide a quick and fun game that can by played by anyone. 
+<p>This is a single page, True or False game. The user will be presented with questions that can be answered with either True or False. The goal for the user is to be able to play a simple but entertaining online game with fun and slightly unusual questions. The site owner's goal is to provide a quick and fun game that can by played by anyone as the chans of a correct answer for each question is 50%. After 5 questions the user will be asked if they want to play again. 
 <br>
 The plan was to include features like: 
 <ul>
@@ -78,6 +78,7 @@ When the true or false buttons are clicked the user will get instant feedback wi
   <br>
   <p>JSHint validation completed, using https://jshint.com/
   <ul>Warnings: <li>Undefined variable Swal - Variable is defined in the importet library from Sweet Alert.</li>
+  <li>Unused variables true_clicked and false_clicked - Corrected in the code.</li>
   </ul>
   </p>
   </ul>
