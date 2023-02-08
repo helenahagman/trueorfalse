@@ -94,7 +94,7 @@ var questions = [{
 /**
  * Displays five random questions for the game
  */
-
+/**code from teamtreehouse.com link in the readme file */
 let randomQuestions = [];
 for (let i = 0; i < 5; i++){
     let randomIndex = Math.floor(Math.random() * questions.length);

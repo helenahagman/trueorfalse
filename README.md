@@ -58,7 +58,8 @@ When the true or false buttons are clicked the user will get instant feedback wi
   <ul>
   <li>Questions did not show on the page - fixed<br> The code was missing the the div id="question". After updating the code the questions show</li>
   <li>True button didnt work - fixed<br> The code was missing some characters. After updating the code the True button works as expected.</li>
-  <li>The score is not updated - fixed<br> Added and updated the incrementScore function after watching the walk through project again. The update is now working as expected.</li></ul>
+  <li>The score is not updated - fixed<br> Added and updated the incrementScore function after watching the walk through project again. The update is now working as expected.</li>
+  </ul>
 <br>
 <h2>Badges</h2>
   <br>
@@ -86,7 +87,7 @@ When the true or false buttons are clicked the user will get instant feedback wi
 <h2>Unfixed Bugs</h2>
   <br>
   <ul>
-  <li>No unfixed bugs</li>
+  <li>The score is not updated when game starts over - not fixed yet</li>
   </ul>
   <br>
 
@@ -107,9 +108,11 @@ When the true or false buttons are clicked the user will get instant feedback wi
    <li>https://jshint.com/</li>
    <ul>Validation of the Java Script code.</ul>
    <li>https://www.webpagetest.org/</li>
-   <ul></ul>
+   <ul>Test of the page</ul>
    <li>https://ui.dev/amiresponsive</li>
-   <ul></ul>
+   <ul>Validation of the responsiveness of the page</ul>
+   <li>https://www.javatpoint.com/javascript-tutorial</li>
+   <ul>Tips for Java Script</ul>
    
 
   </ul>
