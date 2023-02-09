@@ -25,11 +25,12 @@
     </header>
 
     <!--Introduction section-->
-    <section class="intro-area">
-        <p>Play the game!<br>5 questions, will you get them right?<br>
-            It is simple, just choose <span class="true">TRUE</span> or <span
-                class="false">FALSE</span>.</p>
-    </section>
+    <div class="intro-area">
+       <p>Play the game!<br>5 questions, will you get them right?<br>
+        It is simple, just choose <span class="true">TRUE</span> or <span
+        class="false">FALSE</span>.</p>
+    </div>
+    
 
     <!--Question section including game buttons-->
     <section class="question-area">
@@ -53,19 +54,18 @@
     </section>
 
     <!--Score section with score count-->
-    <section class="score-area">
-        <div>
-            <p class="score">Won: <span id="correct">0</span></p>
-            <p class="score">Lost: <span id="incorrect">0</span></p>
-        </div>
-    </section>
+    <div class="score-area">
+        <p class="score">Won: <span id="correct">0</span></p>
+        <p class="score">Lost: <span id="incorrect">0</span></p>
+    </div>
+    
 
     <!-- Reset game section-->
-    <section>
+    <div>
     <p>Want to start a new game or reset an ongoing game? <br>Just use this button:</p>
     <br>
         <input type="button" id="reset" value="Reset Game" onclick="resetGame()">
-    </section>
+    </div>
 
     <!-- Java Script and Sweet Alert script-->
     <script src="assets/js/script.js"></script>
