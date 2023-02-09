@@ -146,6 +146,8 @@
      <ul>Validation of the responsiveness of the page</ul>
     <li><a href="https://www.javatpoint.com/javascript-tutorial">https://www.javatpoint.com/javascript-tutorial</a></li>
      <ul>Tips for Java Script</ul>
+    <li><a href="https://htmlcolorcodes.com/"></a></li>
+     <ul>Colors for the game page</ul> 
    </ul>
   <br>
 </section>

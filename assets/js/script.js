@@ -158,12 +158,14 @@ function checkAnswer(response) {
             title: "How did you do?",
             text: "You got " + score + " out of " + questions.length,
             icon: "question",
-            confirmButtonText: "Play again?"
+            showConfirmButton: true,
+            confirmButtonText: "Play again?",
+            showCancelButton: true,
+            cancelButtonText: "End game",
         }).then((result) => {
             if (result.value) {
-                currentQuestion = 0;
-                score = 0;
-                randomQuestions = [];
+                resetGame();
+                displayQuestion();
                 /** code from Fabio Faria in Slack */
                 document.getElementById("incorrect").innerHTML = 0;
                 document.getElementById("correct").innerHTML = 0;
@@ -174,7 +176,7 @@ function checkAnswer(response) {
                 }
                 
                 questions = randomQuestions;
-                displayQuestion();
+                displayQuestion(); 
             }
         });
         
@@ -189,7 +191,7 @@ function checkAnswer(response) {
  */
 
 const updateScore = () => {
-    document.querySelectorAll("score").innerHTML = score;
+    document.getElementsByClassName("score").innerHTML = score;
 };
 
 document.getElementById("true").addEventListener("click", function () {
@@ -222,6 +224,9 @@ function incrementIncorrectAnswer() {
     document.getElementById("incorrect").innerHTML = parseInt(document.getElementById("incorrect").innerHTML) + 1;
 }
 
+/**
+ * function for the resetGame button to reset the score
+ */
 function resetGame () {
     document.getElementById("incorrect").innerHTML = 0;
     document.getElementById("correct").innerHTML = 0;
