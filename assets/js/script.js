@@ -177,6 +177,14 @@ function checkAnswer(response) {
                 
                 questions = randomQuestions;
                 displayQuestion(); 
+            } else {
+               Swal.fire({
+                title: "Welcome back!",
+                text: "(Changed your mind? Use the reset button.)",
+                icon: "warning",
+                timer: 2200,
+                showConfirmButton: false
+               });
             }
         });
         
