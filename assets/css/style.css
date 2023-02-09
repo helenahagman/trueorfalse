@@ -40,21 +40,25 @@ h1 {
 .true {
     color: rgb(12, 211, 12);
     font-weight: bold;
+    text-shadow: 0 0 black;
 }
 
 .false {
     color: red;
     font-weight: bold;
+    text-shadow: 0 0 black;
 }
 
 .fa-solid fa-check {
     color: rgb(12, 211, 12);
     font-weight: bold;
+    text-shadow: 0 0 black;
 }
 
 .fa-solid fa-xmark {
     color: red;
     font-weight: bold;
+    text-shadow: 0 0 black;
 }
 
 /* Game layout */
@@ -80,11 +84,13 @@ h1 {
 #correct {
     color: rgb(12, 211, 12);
     font-weight: bold;
+    text-shadow: 0 0 black;
 }
 
 #incorrect {
     color: red;
     font-weight: bold;
+    text-shadow: 0 0 black;
 }
 
 /* buttons */

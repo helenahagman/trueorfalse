@@ -1,6 +1,6 @@
 
 <h1>True or False game</h1>
-
+<img style="width:400px;" src="assets/images/thumbsupdown.jpg" alt="Thumbs up down"> 
 <h2>Description</h2>
 <br>
 <p>This is a single page, True or False game. The user will be presented with questions that can be answered with either True or False. The goal for the user is to be able to play a simple but entertaining online game with fun and slightly unusual questions. The site owner's goal is to provide a quick and fun game that can by played by anyone as the chans of a correct answer for each question is 50%. After 5 questions the user will be asked if they want to play again. 
@@ -21,7 +21,12 @@ When the user hovers over the true button the black check symbol will turn white
 When the true or false buttons are clicked the user will get instant feedback with an emoji showing if the answer is correct or incorrect. Underneath the buttons on the page the score will show how many correct and incorrect answers the user has.  
 </p>
 <br>
-<p><a href="https://ui.dev/amiresponsive?url=https://helenahagman.github.io/trueorfalse/">Responsive Link</a>
+<p>
+  <a href="https://ui.dev/amiresponsive">
+   <img style="border:0;width:600px;"
+    src="assets/images/amiresponsive.jpg"
+    alt="Am I Responsive"/>
+  </a>
 </p>
 <br>
 <h2>Features</h2>
@@ -59,6 +64,7 @@ When the true or false buttons are clicked the user will get instant feedback wi
   <li>Questions did not show on the page - fixed<br> The code was missing the the div id="question". After updating the code the questions show</li>
   <li>True button didnt work - fixed<br> The code was missing some characters. After updating the code the True button works as expected.</li>
   <li>The score is not updated - fixed<br> Added and updated the incrementScore function after watching the walk through project again. The update is now working as expected.</li>
+  <li>The score is not updated when game starts over - fixed<br>Updated the code with the help of @FabioFaria in Slack</li>
   </ul>
 <br>
 <h2>Badges</h2>
@@ -87,7 +93,7 @@ When the true or false buttons are clicked the user will get instant feedback wi
 <h2>Unfixed Bugs</h2>
   <br>
   <ul>
-  <li>The score is not updated when game starts over - not fixed yet</li>
+  <li>No unfixed bugs detected</li>
   </ul>
   <br>
 
@@ -113,7 +119,7 @@ When the true or false buttons are clicked the user will get instant feedback wi
    <ul>Validation of the responsiveness of the page</ul>
    <li>https://www.javatpoint.com/javascript-tutorial</li>
    <ul>Tips for Java Script</ul>
-   
+      
 
   </ul>
   <br>
@@ -130,9 +136,8 @@ When the true or false buttons are clicked the user will get instant feedback wi
   <li><a href="https://www.freepik.com/free-photo/3d-render-set-like-dislike-hand-sign-icons_35672122.htm#page=2&query=true%20false&position=36&from_view=keyword">Image by upklyak</a> on Freepik
   <br>
   
-  <li>https://www.w3schools.com/ have been used for several smaller adjustments and especially the col inputs</li>
-  <li>https://fonts.google.com/</li>
- </ul>
+  <li>Fabio Faria in the Slack community for help on solving my problem with the score not resetting when a new game started</li>
+  </ul>
   <br>
 
 <h2>Deployment</h2>
