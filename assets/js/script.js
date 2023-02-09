@@ -156,13 +156,16 @@ function checkAnswer(response) {
         Swal.fire({
             title: "How did you do?",
             text: "You got " + score + " out of " + questions.length,
-            icon: "info",
+            icon: "question",
             confirmButtonText: "Play again?"
         }).then((result) => {
             if (result.value) {
                 currentQuestion = 0;
                 score = 0;
                 randomQuestions = [];
+                /** code from Fabio Faria in Slack */
+                document.getElementById("incorrect").innerHTML = 0;
+                document.getElementById("correct").innerHTML = 0;
                 for (let i = 0; i < 5; i++) {
                     let randomIndex = Math.floor(Math.random() * questions.length);
                     randomQuestions.push(questions[randomIndex]);
@@ -185,7 +188,7 @@ function checkAnswer(response) {
  */
 
 const updateScore = () => {
-    document.getElementById("score").innerHTML = score;
+    document.querySelectorAll("score").innerHTML = score;
 };
 
 document.getElementById("true").addEventListener("click", function () {
