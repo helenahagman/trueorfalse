@@ -7,20 +7,38 @@
   <br>
   <img style="width:400px;" src="assets/images/thumbsupdown.jpg" alt="Thumbs up down">
   <br>
-  <p>This is a single page, True or False game. The user will be presented with questions that can be answered with either True or False. The goal for the user is to be able to play a simple but entertaining online game with fun and slightly unusual questions. The site owner's goal is to provide a quick and fun game that can by played by anyone as the chans of a correct answer for each question is 50%. After 5 questions the user will be asked if they want to play again. 
+  <p>This is a single page, True or False game. The user will be presented with questions that can be answered with either True or False. The goal for the user is to be able to play a simple but entertaining online game with fun and slightly unusual questions. The site owner's goal is to provide a quick and fun game that can by played by anyone as the chans of a correct answer for each question is 50%. After 5 questions the user will be asked if they want to play again.<br>Three main colors have been used throughout the page to make it easy to navigate and to avoid distractions. Green for the "true" elements and red color for the "false" elements. The color on the "Reset Game" button at the bottom of the page is similar to the blue color in the image used on the top of the page.
    <br>
-   The plan was to include features like: 
+</section>
+<br>
+<section>  
+<h2>Planning the project</h2>
+<br>
+   <h4>Include features like:</h4> 
    <ul>
      <li>Feedback on answered questions.</li>
-     <li>Display random questions from the question bank.</li>
+     <li>Display a limited amount of random questions from the question bank.</li>
      <li>Score tracking system that updated the score after each question.</li>
-     <li>Images to support the instant feedback for both correct and incorrect answers.</li>
-     <li>Play again button displayed for the user after the 5 questions have been answered.</li>
+     <li>Icons/image or text to support instant feedback for correct and/or incorrect answers.</li>
+     <li>Play again button and or reset button</li>
    </ul> 
   </p>
   <br>
 </section>
 <section>
+<h2>Features</h2>
+<br>
+  <h3>Game page</h3>
+    <ul>
+     <li>Single page game</li>
+     <li>Clickable True and False buttons to answer the game questions.</li>
+     <li>Instant feedback for correct and incorrect answers.</li> 
+     <li>Hoover function on the True and False buttons.</li>
+     <li>Clear and consistant visual design through out the page, with green representing true and red representing false</li>
+     <li>Accessible and easy to navigate with no distractions</li>
+  
+  <br>  
+  <h3>Interactive elements included on the page</h3>
   <p>
   When the user hovers over the true button the black check symbol will turn white, the same rules apply for the red false button.
   <br> 
@@ -37,21 +55,11 @@
   <br>
   <img src="assets/images/playagain.jpg" alt="Play again" style="width:150px">
   </p>
-
-  <br>
-<h2>Features</h2>
-  <br>
-  <h3>Game page</h3>
-    <ul>
-     <li>Single page game</li>
-     <li>Clickable True and False buttons to answer the game questions.</li>
-     <li>Instant feedback for correct and incorrect answers.</li> 
-     <li>Hoover function on the True and False buttons.</li>
-     <li>Clear and consistant visual design through out the page, with green representing true and red representing false</li>
-     <li>Accessible and easy to navigate with no distractions</li>
   
-  <br>  
+  <br>
+
 </section>
+<br>
 <section>
 <h2>Testing</h2>
   <br>
@@ -73,27 +81,30 @@
   </p>
   
   <br>
+  <h4>Manual testing</h4>
    <li>I tested and confirmed that the game questions display correctly.</li>
-   <li>I tested and confirmed that the game buttons work with the instant feedback function with an emoji.</li>
-   <li>I tested and confirmed that the score updates as expected.</li>
+   <li>I tested and confirmed that the true and false buttons work with the instant feedback function as expected.</li>
+   <li>I tested and confirmed that the score updates as expected when the true and false buttons are clicked.</li>
+   <li>I tested and confirmed that the score is reset when the reset game button is clicked.</li>
+   <li>I tested and confirmed that the pop-up works when a game is completed and the buttons inside work.</li>
   </ul>
 <br>
 </section>
 
 <section>
-<h2>Bugs</h2>
+<h2>Fixed Bugs</h2>
   <br>
   <ul>
    <li>Questions did not show on the page - fixed<br> The code was missing the the div id="question". After updating the code the questions show</li>
    <li>True button didnt work - fixed<br> The code was missing some characters. After updating the code the True button works as expected.</li>
    <li>The score is not updated - fixed<br> Added and updated the incrementScore function after watching the walk through project again. The update is now working as expected.</li>
-   <li>The score is not updated when game starts over - fixed<br>Updated the code with the help of @FabioFaria in Slack</li>
+   <li>The score is not updated when game starts over - fixed<br>Updated the code with the help of FabioFaria in the Slack community of Code Institute</li>
   </ul>
 <br>
 <h2>Unfixed Bugs</h2>
   <br>
   <ul>
-   <li>No unfixed bugs detected</li>
+   <li>When the user selects the end game button in the pop-up after a finished game the following error appears in the consol: Uncaught TypeError: Cannot read properties of undefined (reading 'question') </li>
   </ul>
   <br>
 </section>
@@ -112,9 +123,9 @@
     </a>
   </p>
   <br>
-  <li>HTML validation complete with no errors or warning, using https://validator.w3.org/</li>
+  <li>HTML validation complete with no errors or warning, using <a href="https://validator.w3.org/">https://validator.w3.org/</a></li>
   <br>
-  <p>JSHint validation completed, using https://jshint.com/
+  <p>JSHint validation completed, using <a href="https://jshint.com/">https://jshint.com/</a>
   <ul>Warnings: <li>Undefined variable Swal - Variable is defined in the importet library from Sweet Alert.</li>
   <li>Unused variables true_clicked and false_clicked - Corrected in the code.</li>
   </ul>
@@ -146,7 +157,7 @@
      <ul>Validation of the responsiveness of the page</ul>
     <li><a href="https://www.javatpoint.com/javascript-tutorial">https://www.javatpoint.com/javascript-tutorial</a></li>
      <ul>Tips for Java Script</ul>
-    <li><a href="https://htmlcolorcodes.com/"></a></li>
+    <li><a href="https://htmlcolorcodes.com/">https://htmlcolorcodes.com/</a></li>
      <ul>Colors for the game page</ul> 
    </ul>
   <br>
