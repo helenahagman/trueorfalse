@@ -147,6 +147,7 @@ function checkAnswer(response) {
         incrementIncorrectAnswer();
     }
 
+   
 /**
  * Adds a pop up with the total score and askes if the user wants to play again 
  * */
@@ -221,3 +222,17 @@ function incrementIncorrectAnswer() {
     document.getElementById("incorrect").innerHTML = parseInt(document.getElementById("incorrect").innerHTML) + 1;
 }
 
+function resetGame () {
+    document.getElementById("incorrect").innerHTML = 0;
+    document.getElementById("correct").innerHTML = 0;
+    currentQuestion = 0;
+    score = 0;
+    randomQuestions = [];
+    for (let i = 0; i < 5; i++) {
+        let randomIndex = Math.floor(Math.random() * questions.length);
+    randomQuestions.push(questions[randomIndex]);
+    questions.splice(randomIndex, 1);
+    }
+    questions = randomQuestions;
+    displayQuestion();
+}

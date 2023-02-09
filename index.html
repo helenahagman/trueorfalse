@@ -38,13 +38,13 @@
         </div>
         <br>
         <span>
-            <button data-type="submit" id="true" onclick="true_clicked()">
+            <button data-type="submit" id="true">
                 <span class="material-symbols-outlined">
                     done
                 </span>
             </button>
 
-            <button data-type="submit" id="false" onclick="false_clicked()">
+            <button data-type="submit" id="false">
                 <span class="material-symbols-outlined">
                     close
                 </span>
@@ -52,7 +52,7 @@
         </span>
     </section>
 
-    <!--Score section with score count-->
+    <!--Score section with score count and reset button-->
     <section class="score-area">
         <div>
             <p class="score">Won: <span id="correct">0</span></p>
@@ -60,6 +60,8 @@
             <i class="fa-solid fa-check"></i>
             <i class="fa-solid fa-xmark"></i>
         </div>
+    
+    <input type="button" value="Reset data" onclick="resetGame()">
     </section>
 
     <!-- Java Script and Sweet Alert script-->
