@@ -1,54 +1,62 @@
 
 <section>
-<h1>True or False game</h1>
+  <h1>True or False game</h1>
 </section>
 <section>
-<h2>Description</h2>
-<br>
-<img style="width:400px;" src="assets/images/thumbsupdown.jpg" alt="Thumbs up down">
-<br>
-<p>This is a single page, True or False game. The user will be presented with questions that can be answered with either True or False. The goal for the user is to be able to play a simple but entertaining online game with fun and slightly unusual questions. The site owner's goal is to provide a quick and fun game that can by played by anyone as the chans of a correct answer for each question is 50%. After 5 questions the user will be asked if they want to play again. 
-<br>
-The plan was to include features like: 
-<ul>
-  <li>Feedback on answered questions.</li>
-  <li>Display random questions from the question bank.</li>
-  <li>Score tracking system that updated the score after each question.</li>
-  <li>Images to support the instant feedback for both correct and incorrect answers.</li>
-  <li>Play again button displayed for the user after the 5 questions have been answered.</li>
-</ul> 
-</p>
-<br>
+  <h2>Description</h2>
+  <br>
+  <img style="width:400px;" src="assets/images/thumbsupdown.jpg" alt="Thumbs up down">
+  <br>
+  <p>This is a single page, True or False game. The user will be presented with questions that can be answered with either True or False. The goal for the user is to be able to play a simple but entertaining online game with fun and slightly unusual questions. The site owner's goal is to provide a quick and fun game that can by played by anyone as the chans of a correct answer for each question is 50%. After 5 questions the user will be asked if they want to play again. 
+   <br>
+   The plan was to include features like: 
+   <ul>
+     <li>Feedback on answered questions.</li>
+     <li>Display random questions from the question bank.</li>
+     <li>Score tracking system that updated the score after each question.</li>
+     <li>Images to support the instant feedback for both correct and incorrect answers.</li>
+     <li>Play again button displayed for the user after the 5 questions have been answered.</li>
+   </ul> 
+  </p>
+  <br>
 </section>
 <section>
-<p>
-When the user hovers over the true button the black check symbol will turn white, the same rules apply for the red false button.<br> 
-<img class="img" src="assets/images/hover.png" alt="Hover" style="width:160px"><br>
-When the true or false buttons are clicked the user will get instant feedback with an emoji showing if the answer is correct or incorrect.<br><img src="assets/images/correct.jpg" alt="Correct feedback"><img src="assets/images/incorrect.jpg" alt="Incorrect feedback"><br> Underneath the buttons on the page the score will show how many correct and incorrect answers the user has.<br>
-<img src="assets/images/score.jpg" alt="Score count" style="width:100px"> <br> 
-After the 5 questions have been displayed the user will get a pop-up with the total score and the question to play again.<br>
-<img src="assets/images/playagain.jpg" alt="Play again" style="width:150px">
-</p>
+  <p>
+  When the user hovers over the true button the black check symbol will turn white, the same rules apply for the red false button.
+  <br> 
+  <img class="img" src="assets/images/hover.png" alt="Hover" style="width:160px">
+  <br>
+  When the true or false buttons are clicked the user will get instant feedback with an emoji showing if the answer is correct or incorrect.<br>
+  <img src="assets/images/correct.jpg" alt="Correct feedback"><img src="assets/images/incorrect.jpg" alt="Incorrect feedback">
+  <br>
+  Underneath the buttons on the page the score will show how many correct and incorrect answers the user has.
+  <br>
+  <img src="assets/images/score.jpg" alt="Score count" style="width:100px"> 
+  <br> 
+  After the 5 questions have been displayed the user will get a pop-up with the total score and the question to play again.
+  <br>
+  <img src="assets/images/playagain.jpg" alt="Play again" style="width:150px">
+  </p>
 
-<br>
+  <br>
 <h2>Features</h2>
-<br>
-<h3>Game page</h3>
-<ul>
-  <li>Single page game</li>
-  <li>Clickable True and False buttons to answer the game questions.</li>
-  <li>Instant feedback for correct and incorrect answers.</li> 
-  <li>Hoover function on the True and False buttons.</li>
-  <li>Clear and consistant visual design through out the page, with green representing true and red representing false</li>
-  <li>Accessible and easy to navigate with no distractions</li>
+  <br>
+  <h3>Game page</h3>
+    <ul>
+     <li>Single page game</li>
+     <li>Clickable True and False buttons to answer the game questions.</li>
+     <li>Instant feedback for correct and incorrect answers.</li> 
+     <li>Hoover function on the True and False buttons.</li>
+     <li>Clear and consistant visual design through out the page, with green representing true and red representing false</li>
+     <li>Accessible and easy to navigate with no distractions</li>
   
   <br>  
 </section>
 <section>
 <h2>Testing</h2>
   <br>
- <ul>
-  <li>I tested and confirmed that the site is responsive and looks good on diffrent screen sizes using the devtools device toolbar, Am I Responsive and Lighthouse.</li>
+  <ul>
+    <li>I tested and confirmed that the site is responsive and looks good on diffrent screen sizes using the devtools device toolbar, Am I Responsive and Lighthouse.</li>
   <br>
   <p>
     <a href="https://ui.dev/amiresponsive">
@@ -60,38 +68,36 @@ After the 5 questions have been displayed the user will get a pop-up with the to
   <br>
   <p>
    <a href="https://www.webpagetest.org/lighthouse">
-   <img style="border:0;width:600px;"
-    src="assets/images/webpagetest.jpg"
-    alt="Lighthouse test"/>
+   <img style="border:0;width:600px;" src="assets/images/webpagetest.jpg" alt="Lighthouse test"/>
   </a>
   </p>
-  <p>
- 
-</p>
+  
   <br>
-  <li>I tested and confirmed that the game questions display correctly.</li>
-  <li>I tested and confirmed that the game buttons work with the instant feedback function with an emoji.</li>
-  <li>I tested and confirmed that the score updates as expected.</li>
-   </ul>
+   <li>I tested and confirmed that the game questions display correctly.</li>
+   <li>I tested and confirmed that the game buttons work with the instant feedback function with an emoji.</li>
+   <li>I tested and confirmed that the score updates as expected.</li>
+  </ul>
 <br>
 </section>
+
 <section>
 <h2>Bugs</h2>
   <br>
   <ul>
-  <li>Questions did not show on the page - fixed<br> The code was missing the the div id="question". After updating the code the questions show</li>
-  <li>True button didnt work - fixed<br> The code was missing some characters. After updating the code the True button works as expected.</li>
-  <li>The score is not updated - fixed<br> Added and updated the incrementScore function after watching the walk through project again. The update is now working as expected.</li>
-  <li>The score is not updated when game starts over - fixed<br>Updated the code with the help of @FabioFaria in Slack</li>
+   <li>Questions did not show on the page - fixed<br> The code was missing the the div id="question". After updating the code the questions show</li>
+   <li>True button didnt work - fixed<br> The code was missing some characters. After updating the code the True button works as expected.</li>
+   <li>The score is not updated - fixed<br> Added and updated the incrementScore function after watching the walk through project again. The update is now working as expected.</li>
+   <li>The score is not updated when game starts over - fixed<br>Updated the code with the help of @FabioFaria in Slack</li>
   </ul>
 <br>
 <h2>Unfixed Bugs</h2>
   <br>
   <ul>
-  <li>No unfixed bugs detected</li>
+   <li>No unfixed bugs detected</li>
   </ul>
   <br>
 </section>
+
 <section>
 <h2>Badges</h2>
   <br>
@@ -163,15 +169,17 @@ After the 5 questions have been displayed the user will get a pop-up with the to
   <br>
 </section>
 <section>
-<h2>Deployment</h2>
+ <h2>Deployment</h2>
   <br>
-<ul>
-  <li>The site was deployed to GitHub pages, following the steps from the Love Running Project.</li>
-</ul>
+  <ul>
+   <li>The site was deployed to GitHub pages, following the steps from the Love Running Project.</li>
+  </ul>
 <h3>Live site</h3>
   <br>
- <a href="https://helenahagman.github.io/trueorfalse/">True or False</p>
- </section>
+   <p>
+   https://helenahagman.github.io/trueorfalse/
+   </p>
+</section>
 
 
 
