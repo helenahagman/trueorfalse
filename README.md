@@ -1,10 +1,11 @@
 
 <section>
 <h1>True or False game</h1>
-<img style="width:400px;" src="assets/images/thumbsupdown.jpg" alt="Thumbs up down"> 
 </section>
 <section>
 <h2>Description</h2>
+<br>
+<img style="width:400px;" src="assets/images/thumbsupdown.jpg" alt="Thumbs up down">
 <br>
 <p>This is a single page, True or False game. The user will be presented with questions that can be answered with either True or False. The goal for the user is to be able to play a simple but entertaining online game with fun and slightly unusual questions. The site owner's goal is to provide a quick and fun game that can by played by anyone as the chans of a correct answer for each question is 50%. After 5 questions the user will be asked if they want to play again. 
 <br>
@@ -22,13 +23,12 @@ The plan was to include features like:
 <section>
 <p>
 When the user hovers over the true button the black check symbol will turn white, the same rules apply for the red false button.<br> 
-<img class="img" src="assets/images/hover.png" alt="Hover"><br>
+<img class="img" src="assets/images/hover.png" alt="Hover" style="width:160px"><br>
 When the true or false buttons are clicked the user will get instant feedback with an emoji showing if the answer is correct or incorrect.<br><img src="assets/images/correct.jpg" alt="Correct feedback"><img src="assets/images/incorrect.jpg" alt="Incorrect feedback"><br> Underneath the buttons on the page the score will show how many correct and incorrect answers the user has.<br>
-<img src="assets/images/score.jpg" alt="Score count"> <br> 
+<img src="assets/images/score.jpg" alt="Score count" style="width:100px"> <br> 
 After the 5 questions have been displayed the user will get a pop-up with the total score and the question to play again.<br>
-<img src="assets/images/playagain.jpg" alt="Play again">
+<img src="assets/images/playagain.jpg" alt="Play again" style="width:150px">
 </p>
-<br>
 
 <br>
 <h2>Features</h2>
