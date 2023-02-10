@@ -3,6 +3,7 @@
 @import url('https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.min.css');
 
 /* Global style */
+
 * {
     box-sizing: border-box;
     padding: 10px;
@@ -19,6 +20,7 @@ body {
     margin: auto;
 }
 
+
 /* Heading */
 
 .heading {
@@ -34,7 +36,6 @@ h1 {
 .img {
     padding: 5px 5px 5px 5px;
     height: 200px;
-
 }
 
 .true {
@@ -61,11 +62,10 @@ h1 {
     text-shadow: 0 0 black;
 }
 
+
 /* Game layout */
 
-.intro-area,
-.question-area,
-.score-area {
+.intro-area, .question-area, .score-area {
     padding: 2% 2% 2% 2%;
     margin: auto;
     text-align: center;
@@ -93,6 +93,7 @@ h1 {
     text-shadow: 0 0 black;
 }
 
+
 /* buttons */
 
 #true {
@@ -107,8 +108,7 @@ h1 {
     border-radius: 50px;
 }
 
-#true :hover,
-#false :hover {
+#true :hover, #false :hover {
     color: white;
 }
 
@@ -118,10 +118,11 @@ h1 {
     font-weight: 600;
 }
 
+
 /* Media queries*/
 
-
 /* Default styles for all screen sizes */
+
 * {
     box-sizing: border-box;
     padding: 10px;
@@ -131,6 +132,7 @@ h1 {
 
 
 /* Styles for screens with a maximum width of 1200px */
+
 @media only screen and (max-width: 1200px) {
 
     /* For mobile phones: */
@@ -141,6 +143,7 @@ h1 {
 }
 
 /* Styles for screens with a maximum width of 768px */
+
 @media only screen and (max-width: 768px) {
 
     /* For tablets: */
@@ -174,6 +177,7 @@ h1 {
 }
 
 /* Styles for screens with a maximum width of 320px */
+
 @media only screen and (max-width: 320px) {
 
     /* For x-small screens: */
@@ -188,14 +192,11 @@ h1 {
         padding-left: 5%;
     }
 
-    #true,
-    #false {
+    #true, #false {
         font-size: 20px;
     }
 
-    .intro-area,
-    .question-area,
-    .score-area {
+    .intro-area, .question-area, .score-area {
         padding-left: 10%;
     }
 

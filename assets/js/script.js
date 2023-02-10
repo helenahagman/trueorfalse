@@ -146,7 +146,6 @@ function checkAnswer(response) {
         });
         incrementIncorrectAnswer();
     }
-
    
 /**
  * Adds a pop up with the total score and askes if the user wants to play again 
@@ -223,7 +222,6 @@ updateScore();
 function incrementScore() {
     document.getElementById("correct").innerHTML = parseInt(document.getElementById("correct").innerHTML) + 1;
 }
-
 
 /**
  * gets the current incorrect answers score and increments it by 1
